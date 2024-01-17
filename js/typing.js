@@ -1,6 +1,6 @@
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Artificial Intelligence", "Computer Vision", "Signal Processing", "Deep Learning", "Robotics", "Natural Language Processing"],
+    strings: ["Computer Vision", "Signal Processing", "Deep Learning", "Robotics", "Natural Language Processing"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
