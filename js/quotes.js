@@ -16,4 +16,4 @@ const day = new Date().getDay();
 const quoteOfTheDay = quotes[day % quotes.length];
 
 // Display the quote in the HTML
-document.getElementById("quote").textContent = `"${quoteOfTheDay}"<br>- Miles Davis`;
+document.getElementById("quote").innerHTML = `"${quoteOfTheDay}"<br>- Miles Davis`;
