@@ -9,11 +9,15 @@ const quotes = [
     "Don't play what's there, play what's not there."
 ];
 
-// Get the current day (0 for Sunday, 6 for Saturday)
-const day = new Date().getDay();
 
-// Select the quote based on the current day
-const quoteOfTheDay = quotes[day % quotes.length];
+function getQuoteOfTheDay() {
+    const today = new Date();
+    const dayIndex = today.getDay(); // Get current day (0-6)
+    return quotes[dayIndex % quotes.length]; // Cycle through the quotes
+}
 
-// Display the quote in the HTML
+const quoteOfTheDay = getQuoteOfTheDay();
+
+// Display the quote in the HTML with a line break
 document.getElementById("quote").innerHTML = `"${quoteOfTheDay}"<br>- Miles Davis`;
+
